@@ -5,6 +5,11 @@
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        .navbar-toggler{
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
         .navbar-items{
             display: flex;
             flex-direction: row;
