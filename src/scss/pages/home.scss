@@ -1,0 +1,37 @@
+#page-home{
+    .section-service{
+        .section-cards{
+            .card{
+                padding-left: 4.7rem;
+                padding-right: 4.7rem;
+                padding-top: 5.6rem;
+                padding-bottom: 5.6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                color: $white;
+                min-width: 35rem;
+                min-height: 37.4rem;
+                width: 30%;
+                height: max-content;
+                .card-img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 5rem;
+                }
+                .card-title{
+                    padding-bottom: 3rem;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .card-description{
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-bottom: 14.9rem;
     .bloc-home-hero-img{
         width: 53.5rem;
         min-height: max-content;
@@ -25,9 +26,11 @@
             margin-bottom: 3.6rem;
             font-weight: 500;
             font-size: 2rem;
+            font-family: 'Montserrat';
         }
         p{
             font-size: 1.5rem;
+            font-family: 'Montserrat';
         }
     }
     @media (max-width:768px) {
@@ -36,5 +39,6 @@
         align-content: center;
         justify-content: baseline;
         height: max-content;
+        padding-bottom: 5rem;
     }
 }
