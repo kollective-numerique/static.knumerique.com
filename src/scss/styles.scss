@@ -6,15 +6,24 @@ html{
     font-size: 10px;
     body{
         background-color: $background;
-    }
-    a{
-        color: $white;
-        text-decoration: none;
-        transition: all 300ms;
-        font-weight: 600;
-        &:hover{
+        background-image: url('/img/body_bg.svg');
+        .text-paragraphe-title{
             color: $blue;
         }
+        p{
+            color: white;
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: all 300ms;
+            font-weight: 600;
+            &:hover{
+                color: $blue;
+            }
+        }
     }
+    
 }
 @import 'blocs/navbar';
+@import 'blocs/header';
