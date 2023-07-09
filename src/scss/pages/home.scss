@@ -1,6 +1,8 @@
 #page-home{
     .section-service{
+        padding-bottom: 10rem;
         .section-cards{
+            padding-bottom: 7rem;
             .card{
                 padding-left: 4.7rem;
                 padding-right: 4.7rem;
@@ -32,6 +34,12 @@
                     text-align: center;
                 }
             }
+        }
+        .section-action-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

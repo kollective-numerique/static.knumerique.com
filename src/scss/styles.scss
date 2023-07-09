@@ -11,6 +11,15 @@ html{
         .text-paragraphe-title{
             color: $blue;
         }
+        .btn-blue{
+            background-color: $blue;
+            padding: 1rem 2rem;
+            color: $white;
+            &:hover{
+                background-color: $card-bg;
+                color: $white;
+            }
+        }
         p{
             color: white;
         }
