@@ -14,10 +14,19 @@ footer{
         @media (max-width:768px) {
             flex-direction: column;
             gap: 1.5rem;
-        }
-        // .footer-brand{
+            .footer-brand,.footer-menus,.footer-menus-items,.footer-contact,.footer-newsletter{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                h4{
+                    color: $blue;
+                }
+            }
 
-        // }
+        }
+        
         .footer-menus{
             .footer-menus-items{
                 display: flex;
