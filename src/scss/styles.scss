@@ -33,6 +33,9 @@ html{
                 color: $blue;
             }
         }
+        input{
+            outline: none;
+        }
         section{
             .section-title{
                 color: $blue;
@@ -66,3 +69,4 @@ html{
 @import 'blocs/navbar';
 @import 'blocs/header';
 @import "pages/home";
+@import 'blocs/footer';
