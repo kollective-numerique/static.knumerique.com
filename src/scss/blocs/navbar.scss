@@ -51,24 +51,24 @@
                 display: none;
             }
         }
-    }
-}
-#navbarToggleExternalContent{
-    .links{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .navbar-action-btn{
-        margin-top: 1.5rem;
-        background-color: $blue;
-        color: $white;
-        width: 26rem;
-        height: 3.7rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        border-radius: 10px;
+        #navbarToggleExternalContent{
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .navbar-action-btn{
+                margin-top: 1.5rem;
+                background-color: $blue;
+                color: $white;
+                width: 26rem;
+                height: 3.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                border-radius: 10px;
+            }
+        }
     }
 }
