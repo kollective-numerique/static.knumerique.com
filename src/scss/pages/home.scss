@@ -76,5 +76,10 @@
             flex-direction: column;
         }
     }
+    .section-ideas{
+        @media (max-width:768px) {
+            flex-direction: column-reverse;
+        }
+    }
 
 }
