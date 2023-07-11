@@ -6,11 +6,11 @@ export default {
     outDir: '../dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
-        agence: resolve(__dirname, 'src/agence.html'),
-        apropos: resolve(__dirname, 'src/apropos.html'),
-        blog: resolve(__dirname, 'src/blog.html'),
-        academie: resolve(__dirname, 'src/academie.html'),
+        main: path.resolve(__dirname, 'src/index.html'),
+        agence: path.resolve(__dirname, 'src/agence.html'),
+        apropos: path.resolve(__dirname, 'src/apropos.html'),
+        blog: path.resolve(__dirname, 'src/blog.html'),
+        academie: path.resolve(__dirname, 'src/academie.html'),
       },
     },
   },
