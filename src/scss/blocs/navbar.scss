@@ -24,6 +24,9 @@
             @include breakpoint(mobil){
                 gap: 1rem;
             }
+            @include breakpoint(tablette){
+                gap: 1rem;
+            }
         }
         .navbar-brand{
             width: 16rem;
@@ -52,6 +55,9 @@
             }
             @include breakpoint(mobil){
                 display: none;
+            }
+            @include breakpoint(tablette){
+                width: 15rem;
             }
         }
         #navbarToggleExternalContent{
