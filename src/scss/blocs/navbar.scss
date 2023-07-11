@@ -1,12 +1,12 @@
 #main-navbar{
     background-color: $background-nav-transparent;
-    height: 11rem;
+    height: 9rem;
     .container{
         display: flex;
         flex-direction: row;
         align-items: baseline;
         .navbar-toggler{
-            @media (min-width:768px) {
+            @media(min-width:$mobil) {
                 display: none;
             }
         }
@@ -18,14 +18,17 @@
             a{
                 font-size: 1.4rem;
             }
-            @media (max-width:768px) {
+            @include breakpoint(mobil){
                 display: none;
+            }
+            @include breakpoint(mobil){
+                gap: 1rem;
             }
         }
         .navbar-brand{
             width: 16rem;
-            height: 13.7rem;
-            @media (max-width:768px) {
+            height: 9rem;
+            @include breakpoint(mobil){
                 height: 10rem;
                 width: 12rem;
             }
@@ -47,7 +50,7 @@
             a:hover{
                 color: $dark;
             }
-            @media (max-width:768px) {
+            @include breakpoint(mobil){
                 display: none;
             }
         }
