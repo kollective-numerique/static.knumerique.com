@@ -13,13 +13,13 @@
             width: 100%;
             height: 100%;
         }
-        @media (max-width:768px) {
+        @include breakpoint(mobil){
             width: 100%;
         }
     }
     .bloc-hero-content{
         width: 50.8rem;
-        @media (max-width:768px) {
+        @include breakpoint(mobil){
             width: 100%;
         }
         .text-paragraphe-title{
@@ -33,7 +33,7 @@
             font-family: 'Montserrat';
         }
     }
-    @media (max-width:768px) {
+    @include breakpoint(mobil){
         flex-direction: column;
         align-items: center;
         align-content: center;

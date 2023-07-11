@@ -56,7 +56,7 @@ html{
                 .card{
                     background-color: $card-bg;
                 }
-                @media (max-width:768px) {
+                @include breakpoint(mobil){
                     flex-direction: column;
                     justify-items: center;
                     align-items: center;
