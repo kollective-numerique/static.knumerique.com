@@ -23,6 +23,7 @@ html{
         }
         p{
             color: white;
+            font-family: 'Montserrat';
         }
         a{
             color: $white;
@@ -70,4 +71,5 @@ html{
 @import 'blocs/navbar';
 @import 'blocs/header';
 @import "pages/home";
+@import "pages/agence";
 @import 'blocs/footer';
