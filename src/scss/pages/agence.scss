@@ -26,6 +26,21 @@
                 
             }
         }
+        @include breakpoint(mobil){
+            flex-direction: column;
+            padding-top: 2rem;
+            padding-bottom: 10rem;
+            .hero-img{
+                width: 100%;
+            }
+            .hero-text{
+                width: 100%;
+                h1{
+                    font-size: 2rem;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
     }
     .expertise{
         display: flex;
@@ -67,6 +82,19 @@
                 h2{
                     font-size: 2rem;
                     font-weight: 500;
+                }
+            }
+        }
+        @include breakpoint(mobil){
+            flex-direction: column;
+            .expertise-text{
+                width: 100%;
+            }
+            .expertise-cards{
+                width: 100%;
+                flex-direction: column;
+                .card{
+                    width: 100%;
                 }
             }
         }
