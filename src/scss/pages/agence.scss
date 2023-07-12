@@ -27,4 +27,48 @@
             }
         }
     }
+    .expertise{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .expertise-text{
+            width: 45%;
+            h1{
+                font-size: 2.5rem;
+                color: $blue;
+                margin-bottom: 4.8rem;
+                font-weight: 600;
+            }
+            p{
+                color:$white;
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+        .expertise-cards{
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card{
+                width: 45%;
+                //padding: 10rem;
+                height: 250px;
+                margin-bottom: 3rem;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                background-color: $card-bg;
+                color: $white;
+                h2{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
