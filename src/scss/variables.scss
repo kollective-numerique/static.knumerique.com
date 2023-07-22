@@ -7,6 +7,7 @@ $mobil: 680px;
 $moyen : 1115px;
 $extra: 2560px;
 $font:'Montserrat';
+$font2 :'inter';
 @mixin breakpoint($point) {
     @if $point==moyen {
         @media (max-width: $moyen) {
