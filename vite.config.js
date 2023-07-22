@@ -11,6 +11,7 @@ export default {
         apropos: path.resolve(__dirname, 'src/apropos.html'),
         blog: path.resolve(__dirname, 'src/blog.html'),
         academie: path.resolve(__dirname, 'src/academie.html'),
+        service: path.resolve(__dirname, 'src/service.html'),
       },
     },
   },
