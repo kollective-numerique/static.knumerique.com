@@ -48,6 +48,7 @@
         justify-content: space-between;
         align-items: center;
         align-content: center;
+        padding-bottom: 105px;
         .expertise-text{
             width: 45%;
             h1{
@@ -97,6 +98,49 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .nos-realisations{
+        padding-left: 10%;
+        padding-right: 10%;
+        .section-title{
+            padding-bottom: 73px;
+        }
+        .items-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5%;
+            @include breakpoint(mobil){
+                flex-direction: column;
+            }
+            .item-card{
+                width: 45%;
+                height: 270px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                border-radius: 10px;
+                background-image: url('/img/proj2.png');
+                cursor: pointer;
+                @include breakpoint(mobil){
+                    width: 100%;
+                }
+                h2{
+                    color: $white;
+                }
+            }
+        }
+        .action{
+            width: 100%;
+            padding-top: 59px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
         }
     }
 }
