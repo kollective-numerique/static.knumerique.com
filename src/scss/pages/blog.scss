@@ -25,6 +25,9 @@
         .hero-img {
             width: 40%;
             height: 110vh;
+            @include breakpoint(mobil) {
+                height: 85vh;
+             }
             img {
                 width: 100%;
                 object-fit: cover;
@@ -32,11 +35,12 @@
                 width: 100%;
 
             }
+           
         }
 
         @include breakpoint(mobil) {
             flex-direction: column;
-            padding-top: 2rem;
+            padding-top: 1rem;
             padding-bottom: 10rem;
 
             .hero-img {
@@ -58,16 +62,29 @@
         h2{
             color: $blue;
             padding-bottom: 3rem;
+            @include breakpoint(mobil) {
+               padding-bottom: 2rem;
+             }
         }
         .articles-recents{
             display: flex;
             flex-direction: row;
             gap: 5%;
             padding-bottom: 6rem;
+            flex-wrap: wrap;
+            @include breakpoint(mobil) {
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5rem;
+             }
             .card-blog{
                 width: 29%;
                 //height: 300px;
                 border-color:none !important ;
+                @include breakpoint(mobil) {
+                    width: 90%;
+                    margin-bottom: 2rem;
+                 }
                 .card-img{
                     height: 250px;
                     img{
@@ -104,6 +121,9 @@
         h2{
             color: $blue;
             padding: 3rem 0;
+            @include breakpoint(mobil) {
+               padding: 1rem 0;
+             }
         }
         .artciles-membres{
             display: flex;
@@ -111,6 +131,11 @@
             flex-wrap: wrap;
             gap: 5%;
             padding-bottom: 6rem;
+            @include breakpoint(mobil) {
+                flex-direction: column;
+              align-items: center;
+              padding-bottom: 3rem;
+             }
             .card-blog{
                 width: 320px;
                 //height: 300px;
