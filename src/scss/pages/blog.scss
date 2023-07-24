@@ -60,10 +60,59 @@
             display: flex;
             flex-direction: row;
             gap: 2%;
+            padding-bottom: 6rem;
             .card-blog{
                 width: 35%;
                 //height: 300px;
                 border-color:none !important ;
+                .card-img{
+                    height: 250px;
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                        width: 100%;  
+                    }
+                }
+                .card-content{
+                    background-color: $card-bg;
+                    padding: 40px 30px 70px 30px;
+                    h3{
+                        color: $blue;
+                        padding: 10px 0;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                    h4{
+                        color: $blue;
+                    }
+                    a{
+                        align-items: end ;
+                        color: $blue !important;
+                        padding: 15px 0;
+                        font-size: 1.4rem;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    .section-artciles-membres{
+        h2{
+            color: $blue;
+            padding: 3rem 0;
+        }
+        .artciles-membres{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2%;
+            padding-bottom: 6rem;
+            .card-blog{
+                width: 360px;
+                //height: 300px;
+                border-color:none !important ;
+                padding-top: 3rem;
                 .card-img{
                     height: 250px;
                     img{
