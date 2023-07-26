@@ -1,0 +1,45 @@
+@mixin FlexMainStyled{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#aPropos{
+    @include FlexMainStyled();
+    height: 80vh;
+    #parentDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint(tablette){
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 6rem;
+        }
+        @include breakpoint(mobil){
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 10rem;
+        }
+    }
+    .right{
+        
+        
+        .title{
+            color: $blue;
+            margin-bottom: 15px;
+
+        }
+    }
+ 
+}
+
