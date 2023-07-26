@@ -1,0 +1,21 @@
+@mixin FlexMainStyled{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#aPropos{
+    @include FlexMainStyled();
+    height: 80vh;
+    .right{
+        width: 50%;
+        
+        .title{
+            color: $blue;
+            margin-bottom: 15px;
+        }
+    }
+}
+
