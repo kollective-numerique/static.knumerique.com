@@ -31,12 +31,29 @@
                 p{
                     font-family: $font;
                 }
+                @include breakpoint(tablette){
+                    width: 65%;
+
+                }
+                @include breakpoint(tablette){
+                    width: 100%;
+
+                }
             }
         }
         .card-detailFormation{
             background-color: $card-bg;
             padding: 50px 35px;
             width: 30%;
+            @include breakpoint(tablette){
+                width: 50%;
+
+            }
+            @include breakpoint(mobil){
+                width: 90%;
+                margin: auto;
+
+            }
             h3{
                 color: white;
             }
