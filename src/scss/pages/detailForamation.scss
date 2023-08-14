@@ -9,30 +9,37 @@
         text-align: justify;
         .info{
             margin: 20px 0;
+            width: 80%;
+            @include breakpoint(mobil){
+                width: 100%;
+                
+            }
             h2{
                 margin-bottom: 15px;
             }
             p{
                 font-family: $font;
-
+                
             }
         }
-        
+        .accessibilite{
+            margin-bottom: 30px;
+        }
         .programe-formation{
             .section-programme{
                 background-color: $card-bg;
                 display: flex;
                 justify-content: space-between;
                 padding: 12px;
-                width: 45%;
-                margin: 12px 0;
+                width: 60%;
+                margin: 20px 0;
                 border-radius: 12px;
                 cursor: pointer;
                 p{
                     font-family: $font;
                 }
                 @include breakpoint(tablette){
-                    width: 65%;
+                    width: 70%;
 
                 }
                 @include breakpoint(tablette){
@@ -43,10 +50,10 @@
         }
         .card-detailFormation{
             background-color: $card-bg;
-            padding: 50px 35px;
-            width: 30%;
+            padding: 70px 45px;
+            width: 40%;
             @include breakpoint(tablette){
-                width: 50%;
+                width: 60%;
 
             }
             @include breakpoint(mobil){
@@ -61,7 +68,7 @@
                 display: flex;
                 // justify-content: space-between;
                 align-items: center;
-                margin: 12px 0;
+                margin: 15px 0;
                 p{
                     font-family: $font;
                 }
@@ -73,6 +80,7 @@
                 text-align: right;
                 width: 90%;
                 font-weight: bold;
+                margin: 12px 0;
             }
             .btn-action-formation{
                 background-color: $blue;
