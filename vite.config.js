@@ -12,6 +12,7 @@ export default {
         blog: path.resolve(__dirname, 'src/blog.html'),
         academie: path.resolve(__dirname, 'src/academie.html'),
         service: path.resolve(__dirname, 'src/service.html'),
+        service: path.resolve(__dirname, 'src/detailFormation.html'),
       },
     },
   },
