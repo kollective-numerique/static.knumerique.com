@@ -33,3 +33,12 @@ $font2 :'inter';
         }
     }
 }
+@mixin flexMid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
