@@ -1,22 +1,14 @@
-@mixin flexMid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@mixin flex{
-    display: flex;
-    align-items: center;
-}
 #page-realisation{
     .discover{
         @include flex();
-        justify-content: space-between;
+        // justify-content: space-between;
+        height: 100vh;
         .discover-txt{
             label{
                 color: #fff;
             }
             p{
-                font-size: 26px;
+                font-size: 36px;
                 font-weight: bold;
                 color: #44C6EA;
             }
@@ -30,7 +22,6 @@
     }
     .realisation-img{
         @include flex();
-        // justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 30px;
         flex-direction: row;
@@ -39,8 +30,8 @@
 }
 .content-realisation{
     margin-top: 15px;
-    width: 310px;
-    height: 210px;
+    width: 370px;
+    height: 270px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -49,31 +40,135 @@
         height: 100%;
     }
     .content-btn{
-    //    @include flexMid();
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 7%;
         text-align: center;
     }
     p{
-        font-size: 20px;
+        font-size: 29px;
     }
     .btnr{
-        padding: 10px 25px;
+        padding: 11px 30px;
         margin: 15px;
         border: none;
         outline: none;
         border-radius: 10px;
-    //    &:first-child{
-       
-    //    }
+        font-size: 14px;
     }
     #disc{
         background-color: #44C6EA;
         color: #fff;
+        transition: all .3s ease;
+        &:hover{
+            opacity: .9;
+            color: #111;
+        }
     }
     #see{
         background-color: #FF725E;
         color: #fff;
+        &:hover{
+            opacity: .9;
+            color: #111;
+        }
     }
+}
+@include breakpoint(moyen){
+   #page-realisation{
+    width: 100%;
+    .discover{
+        // margin-top: 9px;
+        height: 100vh;
+        .discover-txt{
+            label{
+                color: #fff;
+            }
+            p{
+                font-size: 33px;
+                font-weight: bold;
+                color: #44C6EA;
+            }
+        }
+        .discover-img{
+            width: 370px;
+            height: 370px;
+        }
+     
+    }
+   }
+   .realisation-img{
+    @include flex();
+    justify-content: space-around; 
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    .content-realisation{
+        margin-top: 20px; 
+     }
+   }  
+}
+@include breakpoint(mobil){
+   #page-realisation{
+    .discover{
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+         .discover-txt{
+             p{
+                 font-size: 27px;
+             }
+         }
+         .discover-img{
+             img{
+                 width: 420px;
+                 height: 400px;
+             }
+         }
+       
+     }
+     .realisation-img{
+        margin-top: 35px;
+        .content-realisation{
+            margin-top: 20px;
+            width: 430px;
+            height: 330px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .content-btn{
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                text-align: center;
+            }
+            p{
+                font-size: 31px;
+            }
+            .btnr{
+                padding: 11px 30px;
+                margin: 15px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                font-size: 14px;
+            }
+        }
+     }
+   }
+}
+@media (max-width: 1190px){
+    .realisation-img{
+        @include flex();
+        justify-content: space-around; 
+        flex-wrap: nowrap;
+        margin-top: 30px;
+        .content-realisation{
+            margin-top: 20px; 
+         }
+       }  
 }
