@@ -1,0 +1,101 @@
+.contenaire-image-detailFormation{
+    img{
+        width: 100%;
+    }
+}
+#page-detailFormation{
+    .info-detail-formation{
+        color: $blue;
+        text-align: justify;
+        .info{
+            margin: 20px 0;
+            width: 80%;
+            @include breakpoint(mobil){
+                width: 100%;
+                
+            }
+            h2{
+                margin-bottom: 15px;
+            }
+            p{
+                font-family: $font;
+                
+            }
+        }
+        .accessibilite{
+            margin-bottom: 30px;
+        }
+        .programe-formation{
+            .section-programme{
+                background-color: $card-bg;
+                display: flex;
+                justify-content: space-between;
+                padding: 12px;
+                width: 60%;
+                margin: 20px 0;
+                border-radius: 12px;
+                cursor: pointer;
+                p{
+                    font-family: $font;
+                }
+                @include breakpoint(tablette){
+                    width: 70%;
+
+                }
+                @include breakpoint(tablette){
+                    width: 100%;
+
+                }
+            }
+        }
+        .card-detailFormation{
+            background-color: $card-bg;
+            padding: 70px 45px;
+            width: 40%;
+            @include breakpoint(tablette){
+                width: 60%;
+
+            }
+            @include breakpoint(mobil){
+                width: 90%;
+                margin: auto;
+
+            }
+            h3{
+                color: white;
+            }
+            .card-section{
+                display: flex;
+                // justify-content: space-between;
+                align-items: center;
+                margin: 15px 0;
+                p{
+                    font-family: $font;
+                }
+                img{
+                    margin-right: 15px;
+                }
+            }
+            #prix-formation{
+                text-align: right;
+                width: 90%;
+                font-weight: bold;
+                margin: 12px 0;
+            }
+            .btn-action-formation{
+                background-color: $blue;
+                color: $white;
+                width: 18rem;
+                height: 3.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                border-radius: 10px;
+            }
+            a:hover{
+                color: $dark;
+            }
+        }
+    }
+}
