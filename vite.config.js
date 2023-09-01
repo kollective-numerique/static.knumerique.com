@@ -14,7 +14,7 @@ export default {
         service: path.resolve(__dirname, 'src/service.html'),
         detailFormation: path.resolve(__dirname, 'src/detailFormation.html'),
         formations: path.resolve(__dirname, 'src/formations.html'),
-        formations: path.resolve(__dirname, 'src/detail-realisation.html'),
+        detailRealisation: path.resolve(__dirname, 'src/detail-realisation.html'),
       },
     },
   },
