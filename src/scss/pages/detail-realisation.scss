@@ -1,0 +1,101 @@
+#page-detail-realisation{
+    @include h4();
+   .detail-img{
+    width: 100%;
+    margin: 0;
+    #img{
+        width: 1128px;
+        border-radius: 4px;
+    }
+    .detail-txt{
+
+    }
+   }
+   .detail-real{
+    @include flex();
+    justify-content: space-around;
+    // margin: 3px 0px;
+    .real{
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+   }
+   .student-detail{
+    margin: 10px 0px;
+    .student-img{
+        @include flex();
+        justify-content: space-around;
+        width: 660px;
+        .student{
+            margin: 20px 15px;
+            h4{
+                color: #44C6EA;
+                margin-top: 7px;
+            }
+            p{
+                font-size: 14px;
+            }
+           .social-links{
+            img{
+                width: 25px;
+                height: 22px;
+                margin: 0px 3px;
+            }
+           }
+        }
+    }
+   }
+}
+@include breakpoint(moyen){
+    #page-detail-realisation{
+        .detail-img{
+            #img{
+                width: 945px;
+            }
+        } 
+    }
+}
+@include breakpoint(mobil){
+    #page-detail-realisation{
+        .detail-img{
+            #img{
+                width: 525px;
+            }
+        }
+        .detail-real{
+            @include flex();
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 0px;
+            .real{
+                img{
+                    width: 350px;
+                    height: 400px;
+                }
+            }
+        }
+        .student-detail{
+            .student-img{
+                @include flex();
+                flex-direction: column;
+                width: 400px;
+                .student{
+                   img{
+                    width: 300px;
+                   } 
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1190px){
+    #page-detail-realisation{
+        .detail-img{
+            #img{
+                width: 945px;
+            }
+        } 
+    }
+}
