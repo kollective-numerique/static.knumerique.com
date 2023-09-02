@@ -1,15 +1,16 @@
 #page-detail-realisation{
     @include h4();
    .detail-img{
-    width: 100%;
-    margin: 0;
-    #img{
-        width: 1128px;
-        border-radius: 4px;
-    }
-    .detail-txt{
+        width: 100%;
+        margin: 0;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    // .detail-txt{
 
-    }
+    // }
    }
    .detail-real{
     @include flex();
@@ -52,7 +53,7 @@
     #page-detail-realisation{
         .detail-img{
             #img{
-                width: 945px;
+                width: 100%;
             }
         } 
     }
@@ -60,8 +61,8 @@
 @include breakpoint(mobil){
     #page-detail-realisation{
         .detail-img{
-            #img{
-                width: 525px;
+            img{
+                width: 100%;
             }
         }
         .detail-real{
@@ -94,7 +95,8 @@
     #page-detail-realisation{
         .detail-img{
             #img{
-                width: 945px;
+                width: 100%;
+                padding-bottom: 1.5rem;
             }
         } 
     }

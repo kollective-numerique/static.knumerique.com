@@ -149,7 +149,7 @@
         @include breakpoint(mobil) {
             padding-top: 0;
             flex-direction: column;
-            height: 115vh;
+            height: max-content;
         }
         .section-content {
             width: 63%;

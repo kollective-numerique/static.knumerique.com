@@ -74,6 +74,19 @@ html{
                     }
                 }
             }
+            #page-blog{
+                .section-articles-recents, .section-artciles-membres{
+                    .articles-recents,.artciles-membres{
+                        .card-blog{
+                            .card-content{
+                                p{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .text-paragraphe-title{
             color: $blue;
