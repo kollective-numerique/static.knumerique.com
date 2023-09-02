@@ -15,6 +15,7 @@ export default {
         detailFormation: path.resolve(__dirname, 'src/detailFormation.html'),
         formations: path.resolve(__dirname, 'src/formations.html'),
         detailRealisation: path.resolve(__dirname, 'src/detail-realisation.html'),
+        realisation: path.resolve(__dirname, 'src/realisation.html'),
       },
     },
   },
