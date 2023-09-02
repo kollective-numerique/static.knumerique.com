@@ -29,6 +29,12 @@ html{
             a{
                 color: $dark;
             }
+            #navbarToggleExternalContent{
+                background-color: $background-light;
+                a{
+                    color: $white;
+                }
+            }
             .card{
                 p{
                     color: $white;
@@ -46,6 +52,25 @@ html{
                     input{
                         background: $background-light;
                         color: $dark;
+                    }
+                }
+            }
+            #page-agence{
+                .hero{
+                    h1{
+                        color: $black;
+                    }
+                }
+                .expertise-text{
+                    p,h2{
+                        color: $black;
+                    }
+                }
+            }
+            #page-academie{
+                .section-content{
+                    h4, ul li{
+                        color: $black;
                     }
                 }
             }
