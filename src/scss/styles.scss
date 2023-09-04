@@ -36,8 +36,10 @@ html{
                 }
             }
             .card{
+                background-color: $background-light!important;
+                color: $black!important;
                 p{
-                    color: $white;
+                    color: $black!important;
                 }
             }
             #main-navbar{
@@ -61,9 +63,14 @@ html{
                         color: $black;
                     }
                 }
-                .expertise-text{
+                .expertise-text,.expertise-cards{
                     p,h2{
                         color: $black;
+                    }
+                    .text{
+                       h2{
+                        color: $black!important;
+                       }
                     }
                 }
             }
@@ -78,12 +85,38 @@ html{
                 .section-articles-recents, .section-artciles-membres{
                     .articles-recents,.artciles-membres{
                         .card-blog{
+                            background-color: $background-light;
                             .card-content{
                                 p{
                                     color: $white;
                                 }
                             }
                         }
+                    }
+                }
+            }
+            #page-service{
+                .contact-us-service{
+                    .contact-us{
+                        .contact-us-form{
+                            form{
+                                input,textarea{
+                                    background: $background-light;
+                                    border: solid 1px $black;
+                                    color: $black;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-cards{
+                    .row-card .card .card-description{
+                       
+                        font-size: 1.4rem!important;
+                        color: $black!important;
+                        font-weight: bold;
+                        
                     }
                 }
             }
